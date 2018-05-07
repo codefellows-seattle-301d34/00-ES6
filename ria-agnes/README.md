@@ -21,8 +21,8 @@ Follow these instructions carefully and in order.
 ---
 
 ##### Investigate how `let` and `const` are now used in the code. Where did you need to convert `const` into `let` to make the code work? Can you identify any patterns/similarities?
-
+I had to change const key word from allproducts. since i didnt i aasign any value at the point of declaration. i also had to change const from every function. since it was assingned to a primitive value in javaScript. Therefore reassingning was not possible.
 
 ##### How did it go with making the adaptation from concatenations to template literal notation? Do you think you'll mostly use template literal notation from now on?
+At first it was daunting. But when started using it ,i felt like that was the much easier method.
 
-(Put your answer here)
