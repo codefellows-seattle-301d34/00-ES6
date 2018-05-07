@@ -21,11 +21,14 @@ Follow these instructions carefully and in order.
 ---
 
 ##### Investigate how `let` and `const` are now used in the code. Where did you need to convert `const` into `let` to make the code work? Can you identify any patterns/similarities?
+var has a functional scope and let and const have block (inside {} scope). also var can be rediclared within the scope while let can not. Const varible can not be updated that why we had to change some of them to let.
 
 (Put your answer here)
 
 ---
 
 ##### How did it go with making the adaptation from concatenations to template literal notation? Do you think you'll mostly use template literal notation from now on?
+
+using $ and ticks insteed of + and '' is less syntax to keep track of. fewer errors as a result
 
 (Put your answer here)
