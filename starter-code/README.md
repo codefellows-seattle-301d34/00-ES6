@@ -22,10 +22,10 @@ Follow these instructions carefully and in order.
 
 ##### Investigate how `let` and `const` are now used in the code. Where did you need to convert `const` into `let` to make the code work? Can you identify any patterns/similarities?
 
-(Put your answer here)
+Obvious places were in for loops or with counters. I thought I'd have to convert more const's back to let's than I did. Seven "let"s and 12 "const"s. I was surprised that you can push into a const declared array! I guess that makes sense because I'm not trying to change the "value" of the array name (a reference to the array in memory)...
 
 ---
 
 ##### How did it go with making the adaptation from concatenations to template literal notation? Do you think you'll mostly use template literal notation from now on?
 
-(Put your answer here)
+Went well. Initially I wondered if text within the literal needed to be quoted but quickly realized it didn't. They make for much neater, more compact, string expressions.
