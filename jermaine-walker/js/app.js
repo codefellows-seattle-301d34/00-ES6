@@ -2,7 +2,7 @@
 
 const names = [ 'bag', 'banana', 'bathroom', 'boots', 'breakfast', 'bubblegum', 'chair', 'cthulhu', 'dog-duck', 'dragon', 'pen', 'pet-sweep', 'scissors', 'shark', 'sweep', 'tauntaun', 'unicorn', 'usb', 'water-can', 'wine-glass' ];
 
-const allProducts = [];
+let allProducts = [];
 const container = document.getElementById( 'image_container' );
 const viewed = [];
 const labels = [];
@@ -61,7 +61,7 @@ function handleClick( event ) {
   for ( let i = 0; i < names.length; i++ ) {
     if ( event.target.id === allProducts[ i ].name ) {
       allProducts[ i ].votes += 1;
-      console.log( event.target.id + ' has ' + allProducts[ i ].votes + ' votes in ' + allProducts[ i ].views + ' views' );
+      console.log( `${event.target.id} has ${allProducts[ i ].votes} votes in ${allProducts[ i ].views} views.` );
     }
   }
   localStorage.busmall = JSON.stringify( allProducts );
