@@ -22,10 +22,10 @@ Follow these instructions carefully and in order.
 
 ##### Investigate how `let` and `const` are now used in the code. Where did you need to convert `const` into `let` to make the code work? Can you identify any patterns/similarities?
 
-(Put your answer here)
+any const items could never be changed even within their scope. Empty arrays needed to be let so they could be added to. Also, numbers that changed needed to be let instead of const because they needed to be able to change such as totalClicks
 
 ---
 
 ##### How did it go with making the adaptation from concatenations to template literal notation? Do you think you'll mostly use template literal notation from now on?
 
-(Put your answer here)
+I like how the literal notation was easier to read than all the plus signs. I'm hoping to quickly get used to the syntax because it makes for cleaner reading code. I would prefer using literal notation.
