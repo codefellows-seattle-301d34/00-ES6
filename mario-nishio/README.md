@@ -28,4 +28,4 @@ Anywhere the const gets reassigned a new value needed to be changed to a let. In
 
 ##### How did it go with making the adaptation from concatenations to template literal notation? Do you think you'll mostly use template literal notation from now on?
 
-(Put your answer here)
+Not having to write the + sign is already super easy. I will for sure use template literals over the old way. 
