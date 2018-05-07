@@ -16,7 +16,7 @@ const votes = [];
 
 function Product(name) {
   this.name = name;
-  this.path = 'img/' + name + '.jpg';
+  this.path = `img/ ${name} .jpg`;
   this.votes = 0;
   this.views = 0;
   allProducts.push(this);
@@ -36,7 +36,7 @@ function displayPics(){
   }
  
   // TODO: In a sentence or two, explain why the previous line of code threw an error when we changed the constiable declaration from `const to `const`.
-  // The const is a block scope. Therefore, const rando is only seen between the curly brackets and cannot be read in the console.log out side of it.
+  // The let is a block scope. Therefore, let rando is only seen between the curly brackets and cannot be read in the console.log out side of it.
   console.log(viewed);
 
   // To the DOM and beyond!
@@ -62,7 +62,7 @@ function handleClick(event) {
   for(let i = 0; i < names.length; i++){
     if(event.target.id === allProducts[i].name) {
       allProducts[i].votes += 1;
-      console.log(event.target.id + ' has ' + allProducts[i].votes + ' votes in ' + allProducts[i].views + ' views');
+      console.log(`${event.target.id} has ${allProducts[i].votes} votes in ${allProducts[i].views} views`);
     }
   }
   localStorage.busmall = JSON.stringify(allProducts);
@@ -73,7 +73,7 @@ function handleClick(event) {
 function showList() {
   for(let i = 0; i < allProducts.length; i++) {
     const liEl = document.createElement('li');
-    liEl.textContent = allProducts[i].name + ' has ' + allProducts[i].votes + ' votes in ' + allProducts[i].views + ' views';
+    liEl.textContent = `${allProducts[i].name} has ${allProducts[i].votes} votes in ${allProducts[i].views} views`;
     list.appendChild(liEl);
   }
 }
