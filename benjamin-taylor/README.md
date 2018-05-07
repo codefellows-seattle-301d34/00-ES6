@@ -22,10 +22,10 @@ Follow these instructions carefully and in order.
 
 ##### Investigate how `let` and `const` are now used in the code. Where did you need to convert `const` into `let` to make the code work? Can you identify any patterns/similarities?
 
-(Put your answer here)
+It seems to me that in most cases, you probably want to use let. const seems to mainly be useful when you want to make sure that some value does not get accidentially changed. It also seems to be useful for assigning a function call to a variable name when the function does not take any arguments.
 
 ---
 
 ##### How did it go with making the adaptation from concatenations to template literal notation? Do you think you'll mostly use template literal notation from now on?
 
-(Put your answer here)
+Changing the concatenations to template literals was fairly straightforward once I understood the notation. I will definitely be using this notation from now on, it is so much tidier than concatenation.
