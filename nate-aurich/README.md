@@ -22,10 +22,10 @@ Follow these instructions carefully and in order.
 
 ##### Investigate how `let` and `const` are now used in the code. Where did you need to convert `const` into `let` to make the code work? Can you identify any patterns/similarities?
 
-(Put your answer here)
+Basically, anywhere that the declared variable would need to be reassigned needed to be converted back to 'let'. Examples include for loops and other counters. Those values need to be incremented.
 
 ---
 
 ##### How did it go with making the adaptation from concatenations to template literal notation? Do you think you'll mostly use template literal notation from now on?
 
-(Put your answer here)
+Template literal notation is actually much simpler and takes much less space adn time to type out. I plan on totally switching to template literal notation when I concatenate strings. I also wonder if it is worth-while to use for regular strings as well, when concatenation is not needed, for simplification and consistency.
