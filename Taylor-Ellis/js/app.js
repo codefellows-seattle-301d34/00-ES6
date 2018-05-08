@@ -4,15 +4,15 @@ const names = ['bag', 'banana', 'bathroom', 'boots', 'breakfast', 'bubblegum', '
 
 let allProducts = [];
 const container = document.getElementById('image_container');
-let viewed = [];
-let labels = [];
+const viewed = [];
+const labels = [];
 const pics = [document.getElementById('left'),
                 document.getElementById('center'), //eslint-disable-line
                 document.getElementById('right')]; //eslint-disable-line
 const list = document.getElementById('productlist');
 let totalClicks = 0;
-let views = [];
-let votes = [];
+const views = [];
+const votes = [];
 
 function Product(name) {
   this.name = name;
@@ -29,16 +29,15 @@ function makeRandom() {
 function displayPics(){
   // roll for three random indexes
   while(viewed.length < 6){
-    var rando = makeRandom();
+    let rando = makeRandom();
     while(!viewed.includes(rando)){
       viewed.push(rando);
     }
   }
-  console.log(rando);
+
   // TODO: In a sentence or two, explain why the previous line of code threw an error when we changed the variable declaration from `var to `let`.
   // Because using let would make it block scoped, so it is only accessible where it is defined, while using var makes it accessible globally, even within the next while loop.
   console.log(viewed);
-
   // To the DOM and beyond!
   for (let i = 0; i < 3; i++){
     let temp = viewed.shift();

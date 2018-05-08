@@ -22,10 +22,10 @@ Follow these instructions carefully and in order.
 
 ##### Investigate how `let` and `const` are now used in the code. Where did you need to convert `const` into `let` to make the code work? Can you identify any patterns/similarities?
 
-(Put your answer here)
+I needed to convert the things that were being redeclared later by local storage or because they were a counter like the viewcounter from const to let. The pattern I noticed is anything that is ever redeclared needs to be let, while anything that does not could and maybe should be const. Incremented variables need to be let as well like in our loops.
 
 ---
 
 ##### How did it go with making the adaptation from concatenations to template literal notation? Do you think you'll mostly use template literal notation from now on?
 
-(Put your answer here)
+Great! I don't think I'll ever be going back to concatenating again after using template literal notation! Not only is it so much easier & cleaner, but it it is so much easier to clearly tell if there is a mistake when writing it. It seems to be a lot easier in many ways.
