@@ -36,7 +36,11 @@ function displayPics(){
   }
   console.log(rando);
   // TODO: In a sentence or two, explain why the previous line of code threw an error when we changed the variable declaration from `var to `let`.
+
   // PUT YOUR RESPONSE IN THIS COMMENT
+  // definition says that var is scoped to the nearest 
+  // function block and let is scoped to the nearest    // enclosing block, which can be smaller than a 
+  // function block.  In the above code block, there's a nested while loop and "rando" on line 33 doesn't recognize the "let rando" from line 32.  
   console.log(viewed)
 
   // To the DOM and beyond!
