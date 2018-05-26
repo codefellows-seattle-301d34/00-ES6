@@ -4,7 +4,6 @@ const names = ['bag', 'banana', 'bathroom', 'boots', 'breakfast', 'bubblegum', '
 
 
 let allProducts = [];
-// const allProducts = [];
 const container = document.getElementById('image_container');
 const viewed = [];
 const labels = [];
@@ -18,7 +17,10 @@ const votes = [];
 
 function Product(name) {
   this.name = name;
-  this.path = 'img/' + name + '.jpg';
+
+  console.log(`img/ ${name} .jpg`);
+  // this.path = (`img/ ${name} .jpg`);
+  this.path = 'img/' + name + '.jpg'; // this one works
   this.votes = 0;
   this.views = 0;
   allProducts.push(this);
@@ -41,8 +43,11 @@ function displayPics(){
 
   // PUT YOUR RESPONSE IN THIS COMMENT
   // definition says that var is scoped to the nearest 
-  // function block and let is scoped to the nearest    // enclosing block, which can be smaller than a 
-  // function block.  In the above code block, there's a nested while loop and "rando" on line 33 doesn't recognize the "let rando" from line 32.  
+  // function block and let is scoped to the nearest    
+  // enclosing block, which can be smaller than a 
+  // function block.  In the above code block, there's a 
+  // nested while loop and "rando" on line 33 doesn't 
+  // recognize the "let rando" from line 32.  
   console.log(viewed)
 
   // To the DOM and beyond!
@@ -79,7 +84,8 @@ function handleClick(event) {
 function showList() {
   for(let i = 0; i < allProducts.length; i++) {
     const liEl = document.createElement('li');
-    liEl.textContent = allProducts[i].name + ' has ' + allProducts[i].votes + ' votes in ' + allProducts[i].views + ' views';
+    liEl.textContent = `${allProducts[i].name}  has ${allProducts[i].votes} votes in  ${allProducts[i].views} views`;
+
     list.appendChild(liEl);
   }
 }
