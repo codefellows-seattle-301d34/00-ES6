@@ -22,10 +22,9 @@ Follow these instructions carefully and in order.
 
 ##### Investigate how `let` and `const` are now used in the code. Where did you need to convert `const` into `let` to make the code work? Can you identify any patterns/similarities?
 
-(Put your answer here)
-
+When you need to be able to change the value of the variable let is needed rather than const. A const needs to be a constant value that can be manipulated by other elements but does not change itself. 
 ---
 
 ##### How did it go with making the adaptation from concatenations to template literal notation? Do you think you'll mostly use template literal notation from now on?
 
-(Put your answer here)
+It went ok, I was uncomfortable with them at first but now I'm using them more often but sometimes it skips my mind in code katas and I mostly do concats. 
